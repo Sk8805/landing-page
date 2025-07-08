@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container-2{
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+        }
+        .top-c{
+            justify-content: center;
+        }
+        .logo{
+            width: 500px;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: -50px;
+        }
+        .s25{
+            width: 350px;
+        }
+        .s25-2{
+            width: 350px;
+            padding-top: 100px;
+        }
+        .s25-3{
+            width: 350px;
+            padding-top: 150px;
+        }
+        .s25-4{
+            width: 350px;
+            padding-top: 120px;
+        }
+        .spark-icon {
+            width: 25px;
+            height: auto;
+            vertical-align: middle;
+            margin-left: 4px;
+            margin-top: -6px;
+        
+        }
+        .text1{
+            text-align: center;
+            font-size: 55px;
+            font-weight: bolder;
+            margin-top: 25px
+        }
+        .text2{
+            text-align: center;
+            font-weight: bolder;
+            font-size: 20px;
+            margin-top: -40px
+        }
+        .text3{
+            font-size: 20px;
+            margin-top: -5px;
+        }
+        .text4{
+            margin-top: -100px;
+            text-align: right;
+            padding-right: 215px;
+        }
+        .text5{
+            text-align: center;
+            margin-top: -10px;
+            font-family: "SamsungOne", sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .color-options {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            font-family: sans-serif;
+            margin-top: 0px;
+            justify-content: right;
+        }
+        .color-options label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+        }
+        .color-options input[type="radio"] {
+            display: none;
+        }
+        .circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            margin-bottom: 5px;
+        }
+            input[type="radio"]:checked + .circle {
+            border: 3px solid #007bff;
+            }
+        .label {
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.1;
+        }
+        .buy-btn{
+            border: 1px #2189ff solid;
+            text-align: center;
+            width: 150px;
+            font-size: 30px;
+            border-radius: 999px;
+            color: #FFFFFF;
+            margin: 0 auto;
+            display: block;
+            background-color: #2189ff;
+            font-weight: 300;
+            cursor: pointer;
+            padding: 12px 24px;
+            font-family: "SamsungOne", sans-serif;
+        }
+        .buylink{
+            text-decoration: none;
+        }
+        .buy-btn:hover{
+            background-color: #FFFFFF;
+            color: #2189ff;
+            border: 1px #2189ff solid;
+            transition: background-color 0.3s ease;
+        }
+        .news-btn{
+            text-align: center;
+            border: 1px #2189ff solid;
+            font-size: 30px;
+            background-color: #2189ff;
+            color: #FFFFFF;
+            font-family: "SamsungOne", sans-serif;
+            border-radius: 999px;
+            width: 400px;
+            display: block;
+            margin: 0 auto;
+            padding: 12px 24px;
+            cursor: pointer;
+            margin-bottom: 200px;
+        }
+        .newslink{
+            text-decoration: none;
+        }
+        .news-btn:hover{
+            background-color: #FFFFFF;
+            color: #2189ff;
+            border: 1px #2189ff solid;
+            transition: background-color 0.3s ease;
+        }
+
+        .carousel-container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 0px;
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-img {
+            width: 100%;
+            flex: 0 0 100%;
+            object-fit: cover;
+        }
+        .nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 32px;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 1;
+            border-radius: 50%;
+        }
+        .left {
+            left: 10px;
+        }
+        .right {
+            right: 10px;
+        }
+    </style>
+
+    <img src="samsunglogo2.jpg" class="logo">
+    <p class="text1">Galaxy S25</p>
+    <p class="text2">Galaxy AI <img src="ai_icon.png" class="spark-icon"> is here</p>
+    <div class="container">
+        <div class="top-c">
+            <img src="s25.webp" class="s25">
+        </div>
+        <div class="bottom-c">
+            <p class="text5">128 GB | 8GB</p>
+            <p class="text3">From ₹ 7999.12/mo. or ₹ 65999.00</p>
+            <a href="product_pay(2).html" class="buylink"><p class="buy-btn">Buy Now</p></a>
+        </div>
+    </div>
+    <h2 class="text4">Colour</h2>
+    <div class="color-options">
+    <label>
+        <input type="radio" name="color" checked>
+        <span class="circle" style="background-color: #eae2cf;"></span>
+        <div class="label"><strong>Amber</strong><br>Yellow</div>
+    </label>
+
+    <label>
+        <input type="radio" name="color">
+        <span class="circle" style="background-color: #444861;"></span>
+        <div class="label">Cobalt<br>Violet</div>
+    </label>
+
+    <label>
+        <input type="radio" name="color">
+        <span class="circle" style="background-color: #3c3c3c;"></span>
+        <div class="label">Onyx<br>Black</div>
+    </label>
+
+    <label>
+        <input type="radio" name="color">
+        <span class="circle" style="background-color: #c4c4c4;"></span>
+        <div class="label">Marble<br>Gray</div>
+    </label>
+    </div>
+    <div class="carousel-container">
+        <button class="nav left" onclick="scrollCarousel(-1)">&#10094;</button>
+        <div class="carousel-track" id="carouselTrack">
+            <img src="s25(3).webp" class="carousel-img">
+            <img src="s25(4).jpg" class="carousel-img">
+            <img src="s25(5).jpg" class="carousel-img">
+        </div>
+        <button class="nav right" onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+    <script>
+        let currentSlide = 0;
+        function scrollCarousel(direction) {
+            const track = document.getElementById("carouselTrack");
+            const totalSlides = track.children.length;
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+    </script>
+    <a href="news_letter.html" class="newslink"><p class="news-btn">Subscribe to our news letter</p></a> 
+</body>
+</html>

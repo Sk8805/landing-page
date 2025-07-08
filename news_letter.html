@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .newsletter-section {
+            max-width: 600px;
+            margin: 80px auto;
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f8f9fa;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            font-family: "SamsungOne", sans-serif;
+        }
+        .newsletter-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 10px;
+        }
+        .newsletter-subtitle {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 30px;
+        }
+        .newsletter-form {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .newsletter-input {
+            padding: 12px 20px;
+            font-size: 16px;
+            width: 300px;
+            border-radius: 999px;
+            border: 1px solid #ccc;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        .newsletter-input:focus {
+            border-color: #2189ff;
+        }
+        .newsletter-btn {
+            background-color: #2189ff;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 999px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .newsletter-btn:hover {
+            background-color: #0e6fdc;
+        }
+    </style>
+
+    <div class="newsletter-section">
+        <h2 class="newsletter-title">Stay Updated with Samsung</h2>
+        <p class="newsletter-subtitle">Get the latest news, updates, and offers delivered straight to your inbox.</p>
+        <form class="newsletter-form" action="news_letter_thankyou.html" method="GET">
+            <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+    </div>
+</body>
+</html>
